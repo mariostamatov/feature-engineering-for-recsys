@@ -458,8 +458,8 @@ def visualize_embeddings_pca(model, df, vectorizer, model_type, num_movies_to_pl
 def main():
     set_seed(42)
     print('Loading and Preprocessing Data')
-    DATA_PATH = 'https://github.com/mariostamatov/llm-feature-eng-recsys/raw/main/data/final_llm_features_dataset.parquet'
-    MOVIES_PATH = 'https://raw.githubusercontent.com/mariostamatov/llm-feature-eng-recsys/refs/heads/main/data/ml-25m/movies.csv'
+    DATA_PATH = os.path.join(PROJECT_ROOT, 'data', 'final_llm_features_dataset.parquet')
+    MOVIES_PATH = os.path.join(PROJECT_ROOT, 'data', 'ml-25m', 'movies.csv')
 
     try:
         df = pd.read_parquet(DATA_PATH)

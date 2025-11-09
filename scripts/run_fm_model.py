@@ -260,7 +260,8 @@ def analyze_prediction_contribution(model, test_loader, device):
 def main():
     set_seed(42)
     print('Loading and Preprocessing Data')
-    DATA_PATH = 'https://github.com/mariostamatov/llm-feature-eng-recsys/raw/main/data/final_llm_features_dataset.parquet'
+    PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    DATA_PATH = os.path.join(PROJECT_ROOT, 'data', 'final_llm_features_dataset.parquet')
 
     try:
         df = pd.read_parquet(DATA_PATH)
