@@ -1,9 +1,8 @@
-# LLM-Powered Feature Engineering for Recommender Systems
+# Feature Engineering for Recommender Systems with Gemini 2.5 Flash
 
 ## Project Overview
 
-This thesis project investigates the efficacy of Large Language Models (LLMs) in generating high-quality, thematic features for recommender systems. Specifically, it explores whether LLM-generated keywords can enhance the predictive accuracy of a Factorization Machine (FM) model compared to traditional human-curated keywords. The project involved building a robust, scalable, and automated cloud-based pipeline for data processing and LLM-powered feature generation, followed by rigorous model training and evaluation.
-
+This thesis investigates the effectiveness of Large Language Models (LLMs) in generating high-quality, thematic features for recommender systems. It examines whether LLM-generated keywords can improve the predictive performance of a Factorization Machine (FM) model compared to traditional human-curated keywords. The work involved designing and executing a scalable, automated cloud-based pipeline for data processing and feature generation, leveraging agentic AI for code implementation, followed by rigorous model training, evaluation, and statistical analysis.
 
 ## Key Findings
 
@@ -18,7 +17,7 @@ The project's methodology is structured into three interconnected modules, ensur
     *   Unified data into a `master_dataframe.parquet` for efficient, columnar storage.
 
 2.  **LLM Feature Generation Pipeline:**
-    *   Developed a robust, scalable, and automated serverless pipeline on Google Cloud Platform (GCP) using Cloud Functions.
+    *   Designed a robust, scalable, and automated serverless pipeline on Google Cloud Platform (GCP) using Cloud Functions.
     *   Employed a precise, multi-shot prompt engineered with the R.I.S.E. framework to guide the **Gemini 2.5 Flash** model in generating thematic keywords from movie plot overviews.
     *   Implemented memory-efficient sampling (`pyarrow`) and parallel API calls (`ThreadPoolExecutor`) to handle large datasets and API rate limits.
     *   Processed movies "one prompt, one movie" to prioritize output quality and consistency for research rigor.
