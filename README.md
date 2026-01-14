@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This thesis investigates the effectiveness of Large Language Models (LLMs) in generating thematic features for recommender systems. It compares LLM-generated keywords with human-curated ones for improving Factorization Machine (FM) model performance. The project involved designing and executing a scalable cloud-based pipeline for data processing and feature generation, integrating LLM-assisted code and features, followed by rigorous model training, evaluation, and statistical analysis.
+This project investigates the effectiveness of Large Language Models (LLMs) in generating thematic features for recommender systems. It compares LLM-generated keywords with human-curated ones for improving Factorization Machine (FM) model performance. The project involved designing and executing a scalable cloud-based pipeline for data processing and feature generation, integrating LLM-assisted code and features, followed by rigorous model training, evaluation, and statistical analysis.
 
 ## Key Findings
 
